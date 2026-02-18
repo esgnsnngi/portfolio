@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejas H G — Developer</title>
+  <link rel="icon" href="th.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+  </button>
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <div class="photo-frame">
+        <img src="tejas.jpeg" alt="Tejas H G" class="profile-photo" />
+      </div>
+      <h2 class="s-name">Tejas H G</h2>
+      <p class="s-role">Full Stack Developer</p>
+    </div>
+    <nav class="nav">
+      <a href="#home"     class="nav-item active" data-target="home"><i class="fa fa-house"></i> Home</a>
+      <a href="#about"    class="nav-item" data-target="about"><i class="fa fa-graduation-cap"></i> Education</a>
+      <a href="#skills"   class="nav-item" data-target="skills"><i class="fa fa-code"></i> Skills</a>
+      <a href="#projects" class="nav-item" data-target="projects"><i class="fa fa-rocket"></i> Projects</a>
+      <a href="#contact"  class="nav-item" data-target="contact"><i class="fa fa-envelope"></i> Contact</a>
+    </nav>
+    <div class="sidebar-socials">
+      <a href="https://github.com/esgnsnngi" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/tejashg" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="tejasteju947@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <section id="home" class="section hero-section">
+      <div class="hero-text">
+        <span class="hero-hi">Hello, I'm</span>
+        <h1 class="hero-name">Tejas H G</h1>
+        <h2 class="hero-type"><span id="type"></span><span class="cursor">|</span></h2>
+        <p class="hero-desc">
+          Motivated Computer Science graduate skilled in Python, Django, React, JavaScript, and MySQL.
+          Passionate about building clean, efficient web applications and solving real-world problems through code.
+        </p>
+        <div class="hero-btns">
+          <button class="btn btn-fill" data-action="view"><i class="fa fa-eye"></i> View Resume</button>
+          <button class="btn btn-ghost" data-action="Download"><i class="fa fa-download"></i> Download CV</button>
+        </div>
+        <p class="hero-phone"><i class="fa fa-phone"></i> +91 <span>7892950571</span></p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="sec-head">
+        <p class="sec-label">Background</p>
+        <h2 class="sec-title">Education</h2>
+      </div>
+      <div class="edu-list">
+        <div class="edu-card">
+          <div class="edu-left"><span class="edu-year">2021 – 2025</span><div class="edu-line"></div></div>
+          <div class="edu-body">
+            <h3>B.Tech — Computer Science</h3>
+            <p class="edu-inst">Navkis College of Engineering, Hassan</p>
+            <div class="edu-badges"><span class="badge">CSE</span><span class="badge accent-badge">CGPA 7.5 / 10</span></div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-left"><span class="edu-year">2019 – 2021</span><div class="edu-line"></div></div>
+          <div class="edu-body">
+            <h3>Intermediate (PUC)</h3>
+            <p class="edu-inst">Masters PU College, Hassan</p>
+            <div class="edu-badges"><span class="badge">PCMB</span><span class="badge accent-badge">97%</span></div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-left"><span class="edu-year">2018 – 2019</span><div class="edu-line"></div></div>
+          <div class="edu-body">
+            <h3>Matriculation (10th)</h3>
+            <p class="edu-inst">Sarvodaya Education Trust, Belur</p>
+            <div class="edu-badges"><span class="badge accent-badge">91%</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="sec-head">
+        <p class="sec-label">What I Use</p>
+        <h2 class="sec-title">Technologies &amp; Tools</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML5" /><span>HTML 5</span></div>
+        <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="CSS3" /><span>CSS 3</span></div>
+        <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/500px-JavaScript-logo.png" alt="JavaScript" /><span>JavaScript</span></div>
+        <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1024px-Python.svg.png" alt="Python" /><span>Python</span></div>
+        <div class="skill-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcR5U16C8yXgBpl7-Bc7Itjx3_LRl425zINA&s" alt="React" /><span>React</span></div>
+        <div class="skill-card"><img src="https://static.vecteezy.com/system/resources/thumbnails/065/386/871/small_2x/figma-logo-icon-figma-app-editable-transparent-background-premium-social-media-design-for-digital-download-free-png.png" alt="Figma" /><span>Figma</span></div>
+        <div class="skill-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc5niSKZpZhcw5Cxk4e5k_-_TNIeaRfu2fgw&s" alt="MySQL" /><span>MySQL</span></div>
+        <div class="skill-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFKUd8TKlGho5jUUcPimr0MKnVEyIP3uI-TQ&s" alt="GitHub" /><span>GitHub</span></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="sec-head">
+        <p class="sec-label">What I've Built</p>
+        <h2 class="sec-title">Projects</h2>
+      </div>
+      <div class="project-card">
+        <div class="proj-header">
+          <div class="proj-icon"><i class="fa-solid fa-file-medical"></i></div>
+          <div class="proj-info">
+            <h3>Digital Health Prescription</h3>
+            <div class="proj-stack"><span>React</span><span>TypeScript</span><span>MySQL</span><span>Tailwind</span><span>Vercel</span></div>
+          </div>
+          <a href="https://digital-prescription-blush.vercel.app/" target="_blank" class="proj-link">Live <i class="fa fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <ul class="proj-list">
+          <li>Enables doctors to create accurate prescriptions digitally using structured forms</li>
+          <li>Generates and downloads prescriptions as professional printable PDFs</li>
+          <li>Fully responsive across desktop, tablet, and mobile</li>
+          <li>Auto-deployed on Vercel via GitHub CI/CD pipeline</li>
+          <li>CRUD APIs with MySQL for secure persistent prescription storage</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <div class="proj-header">
+          <div class="proj-icon purple-icon"><i class="fa-solid fa-hand-pointer"></i></div>
+          <div class="proj-info">
+            <h3>Virtual Mouse</h3>
+            <div class="proj-stack"><span>Python</span><span>OpenCV</span><span>Gemini AI</span></div>
+          </div>
+        </div>
+        <ul class="proj-list">
+          <li>Controls mouse cursor using real-time hand tracking via webcam</li>
+          <li>Supports left-click, right-click, and double-click through finger gestures</li>
+          <li>Low-latency frame processing with image preprocessing for varied lighting</li>
+          <li>Platform-independent — runs on any system with a camera</li>
+          <li>Modular codebase ready for scroll, zoom, and drag extensions</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="sec-head">
+        <p class="sec-label">Get In Touch</p>
+        <h2 class="sec-title">Contact Me</h2>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="field"><label>Name</label><input type="text" name="name" placeholder="Your name" required /></div>
+          <div class="field"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required /></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Phone</label><input type="tel" name="mobile" placeholder="+91 00000 00000" required /></div>
+          <div class="field"><label>Subject</label><input type="text" name="subject" placeholder="Project inquiry" /></div>
+        </div>
+        <div class="field"><label>Message</label><textarea name="message" rows="5" placeholder="Tell me about your project..."></textarea></div>
+        <button type="submit" class="btn btn-fill btn-send"><i class="fa fa-paper-plane"></i> Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 <strong>Tejas H G</strong>. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/esgnsnngi" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/tejashg/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){ emailjs.init("FaaE6WKSMaXKkcc4V"); })();
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      emailjs.sendForm("service_q1o7i0v","template_3uh94pn", this).then(
+        function(){ alert("Message sent!"); document.getElementById("contactForm").reset(); },
+        function(){ alert("Failed to send. Please try again."); }
+      );
+    });
+  </script>
+</body>
+</html>
