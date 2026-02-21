@@ -166,26 +166,31 @@
     </section>
 
     <footer class="footer">
-      <p>© 2025 <strong>Tejas H G</strong>. All rights reserved.</p>
+      <p>© 2025 <strong>Tejas H G</strong>.</p>
       <div class="footer-links">
         <a href="https://github.com/esgnsnngi" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/tejashg/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
     </footer>
-
   </main>
-
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function(){ emailjs.init("FaaE6WKSMaXKkcc4V"); })();
-    document.getElementById("contactForm").addEventListener("submit", function(e){
-      e.preventDefault();
-      emailjs.sendForm("service_q1o7i0v","template_3uh94pn", this).then(
-        function(){ alert("Message sent!"); document.getElementById("contactForm").reset(); },
-        function(){ alert("Failed to send. Please try again."); }
-      );
-    });
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){ emailjs.init("FaaE6WKSMaXKkcc4V"); })();
+
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    emailjs.sendForm("service_q1o7i0v", "template_3uh94pn", this).then(
+      function(res){ 
+        alert("Message sent!"); 
+        document.getElementById("contactForm").reset(); 
+      },
+      function(err){ 
+        alert("Error: " + err.text);  // This will show the REAL reason
+        console.error(err);
+      }
+    );
+  });
+</script>
 </body>
 </html>
